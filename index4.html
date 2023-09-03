@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login page</title>
+  <style>
+    body{
+      background-image: url("https://previews.123rf.com/images/dr911/dr9111202/dr911120200027/12377615-a-blue-binary-codes-background.jpg");
+      
+    }
+    .box{
+      background-color: rgba(0, 0, 0, 0.752);
+      height: 500px;
+      width: 50%;
+      margin: auto;
+      margin-top:50px;
+      border-radius: 20px;
+    }
+    h1{
+      color:rgb(18, 1, 3);
+      background-color: whitesmoke;
+      border-radius: 20px;
+      width: 35%;
+      height: 70px;
+      text-align: center;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .box > h2{
+      color: aqua;
+      text-align: center;
+      padding-top:30px ;
+      font-size: 30px;
+      font-family:monospace;
+    }
+     .pass{
+      padding: auto;
+      padding-left: 100px;
+      margin-left: 220px;
+      margin-top: 50px;
+      height: 50px;
+      width: 30%;
+      font-size:20px ;
+      color: black;
+      
+    }
+    .button{
+      height: 70px;
+      width: 100px;
+      color: green;
+      font-size: 30px;
+      border-radius: 20px;
+     margin-left: 41%;
+     margin-top: 30px;
+     border: 0px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+    }
+    .button:hover{
+      background-color: rgb(38, 5, 93);
+    }
+    .button2{
+      height: 70px;
+      width:max-content;
+      color: green;
+      font-size: 30px;
+      border-radius: 20px;
+      margin: auto;
+      margin-left:30%;
+      margin-top: 30px;
+      border: 0px;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+
+    }
+    a:link{
+     text-decoration: none;
+     color: black;
+
+    }
+    @media (min-width:100px) and (max-width: 700px){
+      .box{
+      background-color: rgba(0, 0, 0, 0.752);
+      height: 400px;
+      width:90vw;
+      margin: auto;
+      margin-top:50px;
+      border-radius: 20px;
+    }
+    h1{
+      color:rgb(244, 7, 34);
+      background-color: rgb(10, 0, 0);
+      font-size: 25px;
+      border-radius: 20px;
+      width: 100vw;
+      height: 70px;
+      text-align: center;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+    }
+    .box > h2{
+      color: aqua;
+      text-align: center;
+      padding-top:30px ;
+      font-size: 20px;
+      font-family:monospace;
+    }
+    .pass{
+      padding: auto;
+      padding-left:50px;
+      margin-left:50px;
+      margin-top: 50px;
+      height: 50px;
+      width:50%;
+      font-size:20px ;
+      color: black;
+    }
+    .button{
+      height: 50px;
+      width: 100px;
+      color: green;
+      font-size: 20px;
+      border-radius: 20px;
+      margin-left:35%;
+      margin-top: 50px;
+      border: 0px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    }
+    .button2{
+      height: 50px;
+      width:max-content;
+      color: green;
+      font-size: 20px;
+      border-radius: 20px;
+      margin-left:30%;
+      border: 0px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+     a:link{
+     text-decoration: none;
+     color: black;
+     }
+
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <h1>Hey! Welcome To The Login Page</h1>
+  <div  class="box"  id="login-form">
+    <h2>Dear Respected Faculty Please Enter Your Password To Continue !</h2>
+
+   <div class="login-container" id="login-container">
+    <input type="password" id="password" placeholder="Password" required class="pass">
+  <button onclick="checkPassword()" class="button">Login</button>
+</div>
+
+<div id="page1" style="display: none;" >
+  <h2>Login successful</h2>
+  <button class="button2"><a href="./indexDSPA1.html">Mark The Attendence</a></button>
+  <!-- Page 1 content goes here -->
+</div>
+<div id="page2" style="display: none;">
+  <button class="button2"><a href="./indexDSPA2.html">Mark The Attendence</a></button>
+
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page3" style="display: none;">
+  <button class="button2"><a href="./indexDSPB1.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page4" style="display: none;">
+  <button class="button2"><a href="./indexDSPB2.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page5" style="display: none;">
+  <button class="button2"><a href="./indexMPMCA1.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page6" style="display: none;">
+  <button class="button2"><a href="./indexMPMCA2.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page7" style="display: none;">
+  <button class="button2"><a href="./indexMPMCB1.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page8" style="display: none;">
+  <button class="button2"><a href="./indexMPMCB2.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page9" style="display: none;">
+  <button class="button2"><a href="./indexDSPA.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page10" style="display: none;">
+  <button class="button2"><a href="./indexMPMCA.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page11" style="display: none;">
+  <button class="button2"><a href="./indexAMEA.html ">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page12" style="display: none;">
+  <button class="button2"><a href="./indexOOPSA.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page13" style="display: none;">
+  <button class="button2"><a href="./indexCSA.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page14" style="display: none;">
+  <button class="button2"><a href="./indexDSPB.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page15" style="display: none;">
+  <button class="button2"><a href="./indexMPMCB.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page16" style="display: none;">
+  <button class="button2"><a href="./indexAMEB.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page17" style="display: none;">
+  <button class="button2"><a href="./indexOOPSB.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page18" style="display: none;">
+  <button class="button2"><a href="./indexCSB.html">Mark The Attendence</a></button>
+  <!-- Page 2 content goes here -->
+</div>
+<script>
+var _0x16ae=["\x76\x61\x6C\x75\x65","\x70\x61\x73\x73\x77\x6F\x72\x64","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x23\x64\x73\x70\x6C\x2D\x61\x31","\x23\x64\x73\x70\x6C\x2D\x61\x32","\x23\x64\x73\x70\x6C\x2D\x62\x31","\x23\x64\x73\x70\x6C\x2D\x62\x32","\x23\x6D\x70\x6D\x63\x6C\x2D\x61\x31","\x23\x6D\x70\x6D\x63\x6C\x2D\x61\x32","\x23\x6D\x70\x6D\x63\x6C\x2D\x62\x31","\x23\x6D\x70\x6D\x63\x6C\x2D\x62\x32","\x23\x64\x73\x70\x2D\x61","\x23\x6D\x70\x6D\x63\x2D\x61","\x23\x61\x6D\x65\x2D\x61","\x23\x6F\x6F\x70\x73\x2D\x61","\x23\x63\x73\x2D\x61","\x23\x64\x73\x70\x2D\x62","\x23\x6D\x70\x6D\x63\x2D\x62","\x23\x61\x6D\x65\x2D\x62","\x23\x6F\x6F\x70\x73\x2D\x62","\x23\x63\x73\x2D\x62","\x64\x69\x73\x70\x6C\x61\x79","\x73\x74\x79\x6C\x65","\x6C\x6F\x67\x69\x6E\x2D\x63\x6F\x6E\x74\x61\x69\x6E\x65\x72","\x6E\x6F\x6E\x65","\x70\x61\x67\x65\x31","\x62\x6C\x6F\x63\x6B","\x70\x61\x67\x65\x32","\x70\x61\x67\x65\x33","\x70\x61\x67\x65\x34","\x70\x61\x67\x65\x35","\x70\x61\x67\x65\x36","\x70\x61\x67\x65\x37","\x70\x61\x67\x65\x38","\x70\x61\x67\x65\x39","\x70\x61\x67\x65\x31\x30","\x70\x61\x67\x65\x31\x31","\x70\x61\x67\x65\x31\x32","\x70\x61\x67\x65\x31\x33","\x70\x61\x67\x65\x31\x34","\x70\x61\x67\x65\x31\x35","\x70\x61\x67\x65\x31\x36","\x70\x61\x67\x65\x31\x37","\x70\x61\x67\x65\x31\x38","\x49\x6E\x63\x6F\x72\x72\x65\x63\x74\x20\x70\x61\x73\x73\x77\x6F\x72\x64\x2E\x20\x50\x6C\x65\x61\x73\x65\x20\x74\x72\x79\x20\x61\x67\x61\x69\x6E\x2E"];function checkPassword(){const _0x18c4x2=document[_0x16ae[2]](_0x16ae[1])[_0x16ae[0]];const _0x18c4x3=_0x16ae[3];const _0x18c4x4=_0x16ae[4];const _0x18c4x5=_0x16ae[5];const _0x18c4x6=_0x16ae[6];const _0x18c4x7=_0x16ae[7];const _0x18c4x8=_0x16ae[8];const _0x18c4x9=_0x16ae[9];const _0x18c4xa=_0x16ae[10];const _0x18c4xb=_0x16ae[11];const _0x18c4xc=_0x16ae[12];const _0x18c4xd=_0x16ae[13];const _0x18c4xe=_0x16ae[14];const _0x18c4xf=_0x16ae[15];const _0x18c4x10=_0x16ae[16];const _0x18c4x11=_0x16ae[17];const _0x18c4x12=_0x16ae[18];const _0x18c4x13=_0x16ae[19];const _0x18c4x14=_0x16ae[20];if(_0x18c4x2=== _0x18c4x3){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[25])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x4){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[27])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x5){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[28])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x6){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[29])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x7){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[30])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x8){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[31])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x9){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[32])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4xa){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[33])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4xb){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[34])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4xc){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[35])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4xd){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[36])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4xe){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[37])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4xf){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[38])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x10){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[39])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x11){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[40])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x12){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[41])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x13){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[42])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {if(_0x18c4x2=== _0x18c4x14){document[_0x16ae[2]](_0x16ae[23])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[24];document[_0x16ae[2]](_0x16ae[43])[_0x16ae[22]][_0x16ae[21]]= _0x16ae[26]}else {alert(_0x16ae[44])}}}}}}}}}}}}}}}}}}}
+</script>
+</body>
+</html>

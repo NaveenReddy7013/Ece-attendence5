@@ -1,0 +1,24 @@
+
+function checkPassword() {
+  const passwordInput = document.getElementById("password");
+  const message = document.getElementById("message");
+  const contentDiv = document.getElementById("content");
+
+  const password = passwordInput.value;
+  // Replace "your_password" with the actual password you want to use
+  const correctPassword = "nani";
+
+  if (password === correctPassword) {
+    message.textContent = "Login successful!";
+    contentDiv.style.display = "block";
+    document.getElementById("login-form").style.display = "none";
+  } else {
+    message.textContent = "Incorrect password. Please try again.";
+  }
+}
+
+
+
+
+
+

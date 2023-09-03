@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protected Page</title>
+</head>
+<body>
+  <h1>Welcome to the Protected Page</h1>
+  <div id="login-form">
+    <label for="password">Enter the password:</label>
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="checkPassword()">Login</button>
+    <p id="message"></p>
+  </div>
+  <div id="content" style="display: none;">
+    <!-- Your protected content goes here -->
+    <p>This is the secret content that's only visible after login.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<script>
+function checkPassword() {
+    const passwordInput = document.getElementById("password");
+    const message = document.getElementById("message");
+    const contentDiv = document.getElementById("content");
+  
+    const password = passwordInput.value;
+    // Replace "your_password" with the actual password you want to use
+    const correctPassword = "your_password";
+  
+    if (password === correctPassword) {
+      message.textContent = "Login successful!";
+      contentDiv.style.display = "block";
+      document.getElementById("login-form").style.display = "none";
+    } else {
+      message.textContent = "Incorrect password. Please try again.";
+    }
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multi-Page Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+  }
+  .login-container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  .login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="login-container" id="login-container" style="display: none;">
+  <h2>Login</h2>
+  <input type="password" id="password" placeholder="Password" required>
+  <button onclick="checkPassword()">Login</button>
+</div>
+<div id="page1" style="display: none;">
+  <h1>Welcome to Page 1</h1>
+  <!-- Page 1 content goes here -->
+</div>
+<div id="page2" style="display: none;">
+  <h1>Welcome to Page 2</h1>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page3" style="display: none;">
+  <h1>Welcome to Page 3</h1>
+  <!-- Page 2 content goes here -->
+</div>
+<script>
+  function checkPassword() {
+    const password = document.getElementById("password").value;
+
+    // Define passwords for each page
+    const page1Password = "password1";
+    const page2Password = "password2";
+    const page3Password = "password3";
+
+    if (password === page1Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page1").style.display = "block";
+    } else if (password === page2Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page2").style.display = "block";
+    }
+    else if (password === page3Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page3").style.display = "block";
+    }  
+    else {
+      alert("Incorrect password. Please try again.");
+    }
+  }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Hey! Welcome To The Login Page</h1>
+  <div  class="box"  id="login-form">
+    <h2>Dear Respected Faculty Please Enter Your Password To Continue !</h2>
+
+   <div class="login-container" id="login-container">
+    <input type="password" id="password" placeholder="Password" required>
+  <button onclick="checkPassword()">Login</button>
+</div>
+<div class="pass">
+<div id="page1" style="display: none;" >
+  <h1>Welcome to Page 1</h1>
+  <!-- Page 1 content goes here -->
+</div>
+<div id="page2" style="display: none;">
+  <h1>Welcome to Page 2</h1>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page3" style="display: none;">
+  <h1>Welcome to Page 3</h1>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page4" style="display: none;">
+  <h1>Welcome to Page 4</h1>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page5" style="display: none;">
+  <h1>Welcome to Page 5</h1>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page6" style="display: none;">
+  <h1>Welcome to Page 6</h1>
+  <!-- Page 2 content goes here -->
+</div>
+<div id="page7" style="display: none;">
+  <h1>Welcome to Page 7</h1>
+  <!-- Page 2 content goes here -->
+</div>
+</div>
+<script>
+  function checkPassword() {
+    const password = document.getElementById("password").value;
+
+    // Define passwords for each page
+    const page1Password = "password1";
+    const page2Password = "password2";
+    const page3Password = "password3";
+    const page4Password = "password4";
+    const page5Password = "password5";
+    const page6Password = "password6";
+    const page7Password = "password7";
+
+
+
+    if (password === page1Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page1").style.display = "block";
+    } else if (password === page2Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page2").style.display = "block";
+    }
+    else if (password === page3Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page3").style.display = "block";
+    }  
+    else if (password === page4Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page4").style.display = "block";
+    }  
+    else if (password === page5Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page5").style.display = "block";
+    }  
+    else if (password === page6Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page6").style.display = "block";
+    }  
+    else if (password === page7Password) {
+      document.getElementById("login-container").style.display = "none";
+      document.getElementById("page7").style.display = "block";
+    }  
+    else {
+      alert("Incorrect password. Please try again.");
+    }
+  }
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Hey! Welcome To The Login Page</h1>
+<div  class="box"  id="login-form">
+  <h2>Dear Respected Faculty Please Enter Your Password To Continue !</h2>
+ 
+  <input type="password" id="password" placeholder="Password" class="pass"><br>
+  <button onclick="checkPassword()" class="button">Login</button>
+  <p id="message"></p>
+  </div>
+  <div id="content" style="display: none;">
+  <!-- Your protected content goes here -->
+  <div class="box">
+    <h2>Hey!Your Login is Verified.</h2>
+    <button class="button2"><a href=" ">Mark The Attendence</a></button>
+
+  </div>
+  </div>
+</div>

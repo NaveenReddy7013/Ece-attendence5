@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Date Input Form</title>
+</head>
+<body>
+    <h2>Date Input Form</h2>
+    <form action="#" method="post">
+        <label for="date">Select a Date:</label>
+        <input type="date" name="date" value="Submit">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwMylRxW8wnRonDMo-DoaU8fQYU2PQQH1s4LuME3I0QadMnI0NffZsM29QJRxpwkHYD/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const success=document.getElementById('success');
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                success.innerHTML="data successfully submitted";
+                setTimeout(function()
+                {
+                    success.innerHTML="";
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+  
+      // Define passwords for each page
+      const page1Password = "#dspl-a1";
+      const page2Password = "#dspl-a2";
+      const page3Password = "#dspl-b1";
+      const page4Password = "#dspl-b2";
+      const page5Password = "#mpmcl-a1";
+      const page6Password = "#mpmcl-a2";
+      const page7Password = "#mpmcl-b1";
+      const page8Password = "#mpmcl-b2";
+      const page9Password = "#dsp-a";
+      const page10Password = "#mpmc-a";
+      const page11Password = "#ame-a";
+      const page12Password = "#oops-a";
+      const page13Password = "#cs-a";
+      const page14Password = "#dsp-b";
+      const page15Password = "#mpmc-b";
+      const page16Password = "#ame-b";
+      const page17Password = "#oops-b";
+      const page18Password ="#cs-b";
+     
+  
+      if (password === page1Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page1").style.display = "block";
+      } else if (password === page2Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page2").style.display = "block";
+      }
+      else if (password === page3Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page3").style.display = "block";
+      }  
+      else if (password === page4Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page4").style.display = "block";
+      }    
+      else if (password === page5Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page5").style.display = "block";
+      }  
+      else if (password === page6Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page6").style.display = "block";
+      }  
+      else if (password === page7Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page7").style.display = "block";
+      }  
+      else if (password === page8Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page8").style.display = "block";
+      }  
+      else if (password === page9Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page9").style.display = "block";
+      }  
+      else if (password === page10Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page10").style.display = "block";
+      }
+      else if (password === page11Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page11").style.display = "block";
+      }  
+      else if (password === page12Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page12").style.display = "block";
+      }  
+      else if (password === page13Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page13").style.display = "block";
+      }  
+      
+      else if (password === page14Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page14").style.display = "block";
+      }  
+      else if (password === page15Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page15").style.display = "block";
+      }  
+      else if (password === page16Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page16").style.display = "block";
+      }  
+      else if (password === page17Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page17").style.display = "block";
+      }  
+      else if (password === page18Password) {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("page18").style.display = "block";
+      }  
+     
+      else {
+        alert("Incorrect password. Please try again.");
+      }
+    }
+  </script>
